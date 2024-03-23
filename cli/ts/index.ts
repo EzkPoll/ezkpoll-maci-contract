@@ -43,6 +43,16 @@ program.name(name).description(description).version(version);
 
 const getSigner = async (): Promise<Signer> => import("maci-contracts").then((m) => m.getDefaultSigner());
 
+getSigner().then((signer) => {
+  signer.provider?.getNetwork().then((network) => {
+    // eslint-disable-next-line no-console
+    console.log({
+      message: "Connected to network",
+      ...network,
+    });
+  });
+});
+
 // add the commands
 program
   .command("create")

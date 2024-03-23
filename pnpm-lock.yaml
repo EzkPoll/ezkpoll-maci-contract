@@ -223,6 +223,9 @@ importers:
 
   contracts:
     dependencies:
+      '@nomicfoundation/edr-darwin-arm64':
+        specifier: ^0.3.2
+        version: 0.3.2
       '@nomicfoundation/hardhat-ethers':
         specifier: ^3.0.5
         version: 3.0.5(ethers@6.11.1)(hardhat@2.22.1)
@@ -4290,6 +4293,13 @@ packages:
     os: [darwin]
     requiresBuild: true
     optional: true
+
+  /@nomicfoundation/edr-darwin-arm64@0.3.2:
+    resolution: {integrity: sha512-l6wfSBUUbGJiCENT6272CDI8yoMuf0sZH56H5qz3HnAyVzenkOvmzyF6/lar54m986kdAQqWls4cLvDxiOuLxg==}
+    engines: {node: '>= 18'}
+    cpu: [arm64]
+    os: [darwin]
+    dev: false
 
   /@nomicfoundation/edr-darwin-x64@0.3.1:
     resolution: {integrity: sha512-vtS2yuXIgjte42KEg/Aw/xmLRneVrIaDFhFMk578zg3m1UjNP+a29Lirw5fRXaqaL8aPyhRFmUy+1/V4MGaH+g==}

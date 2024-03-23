@@ -71,6 +71,7 @@
     "verify:optimism-sepolia": "pnpm run verify --network optimism_sepolia"
   },
   "dependencies": {
+    "@nomicfoundation/edr-darwin-arm64": "^0.3.2",
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/contracts": "^4.8.0",
